@@ -1,0 +1,210 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background: var(--bg-color);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center; /* ✅ Fix Alignment Issue */
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* Light Mode Default */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #002244;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --box-bg: rgba(255, 255, 255, 0.9);
+    --border-color: #007bff;
+}
+
+/* Ensure Dark Mode Applies Correctly */
+body.dark-mode {
+    --bg-color: #121212 !important;
+    --text-color: #f8f9fa !important; /* ✅ Slightly lighter for better contrast */
+    --button-bg: #007bff !important; /* ✅ More visible button color */
+    --button-text: #ffffff !important;
+    --box-bg: rgba(45, 45, 45, 0.95) !important; /* ✅ Increased contrast */
+    --border-color: #00ccff !important; /* ✅ Light blue border for better visibility */
+}
+
+/* Improve contrast for input fields in dark mode */
+body.dark-mode input, body.dark-mode select {
+    background-color: #222 !important;
+    color: #f8f9fa !important;
+    border: 2px solid var(--border-color) !important;
+}
+
+/* Improve button hover effects */
+body.dark-mode button:hover, body.dark-mode .predict-button:hover {
+    background-color: #0099ff !important;
+}
+
+
+/* Apply Background and Text Colors */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Logo Container - Positioned to the Top Left */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.logo-container img {
+    width: 50px;
+    height: auto;
+}
+
+.logo-container span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* Inner Box for Result Page */
+.result-container {
+    background: var(--box-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin: 40px auto;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.8s ease-in-out;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    position: relative;
+}
+
+.inner-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Positive Result Animation */
+.result-positive {
+    color: #ff3b30;
+    font-weight: bold;
+    font-size: 22px;
+    background: rgba(255, 0, 0, 0.3);
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.6);
+    text-transform: uppercase;
+    animation: shake 0.5s ease-in-out infinite alternate;
+}
+
+/* Negative Result Animation */
+.result-negative {
+    color: #00c851;
+    font-weight: bold;
+    font-size: 22px;
+    background: rgba(0, 255, 0, 0.3);
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.6);
+    text-transform: uppercase;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Shake Animation for Positive Result */
+@keyframes shake {
+    0% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+/* Glow Effect for Negative Result */
+@keyframes glow {
+    0% { box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.6); }
+    100% { box-shadow: 0px 0px 25px rgba(0, 255, 0, 1); }
+}
+
+/* Input Fields - Reduced Width and Centered */
+input[type="number"], input[type="text"], select {
+    width: 50%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Focus Effect */
+input:focus, select:focus {
+    border-color: #0056b3 !important;
+    outline: none;
+    box-shadow: 0px 0px 12px rgba(0, 123, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Buttons - Proceed & Predict */
+button[type="submit"], .predict-button {
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Sky Blue Hover Effect */
+button[type="submit"]:hover, .predict-button:hover {
+    background-color: skyblue;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Adds space above the contact list */
+}
+section {
+    margin-top: 40px; /* Adjust this value as needed */
+}
+

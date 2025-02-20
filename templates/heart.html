@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/health_preview.png') }}" alt="HealthGuard AI Logo">
+        <span>HealthGuard AI</span>
+    </div>
+
+    <h1>❤️ Heart Disease Prediction</h1>
+    <p><strong>Patient Name:</strong> {{ name }}</p>
+
+    <div class="form-container">
+        <form method="POST" action="/predict_heart">
+            <input type="hidden" name="name" value="{{ name }}">
+
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+            <label>Sex (0 = Female, 1 = Male):</label>
+            <input type="number" name="sex" required>
+
+            <label>Chest Pain Type:</label>
+            <input type="number" name="cp" required>
+
+            <label>Resting Blood Pressure:</label>
+            <input type="number" name="trestbps" required>
+
+            <label>Cholesterol Level:</label>
+            <input type="number" name="chol" required>
+
+            <label>Fasting Blood Sugar (1 = High, 0 = Normal):</label>
+            <input type="number" name="fbs" required>
+
+            <label>Resting ECG Result:</label>
+            <input type="number" name="restecg" required>
+
+            <label>Maximum Heart Rate:</label>
+            <input type="number" name="thalach" required>
+
+            <label>Exercise-Induced Angina (0 = No, 1 = Yes):</label>
+            <input type="number" name="exang" required>
+
+            <label>Oldpeak (ST Depression):</label>
+            <input type="number" name="oldpeak" required>
+
+            <label>Slope of ST Segment:</label>
+            <input type="number" name="slope" required>
+
+            <label>Number of Major Vessels Colored by Fluoroscopy:</label>
+            <input type="number" name="ca" required>
+
+            <label>Thalassemia Type (0, 1, 2, 3):</label>
+            <input type="number" name="thal" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+   
+</body>
+</html>

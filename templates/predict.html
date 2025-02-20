@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Enter Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/health_preview.png') }}" alt="HealthGuard AI Logo">
+        <span>HealthGuard AI</span>
+    </div>
+
+    <h2>🔍 Disease Prediction</h2>
+    <p><strong>Patient Name:</strong> {{ name }}</p>
+
+    <div class="form-container">
+        <form action="/predict" method="POST">
+            <input type="hidden" name="name" value="{{ name }}">
+            <input type="hidden" name="disease" value="{{ disease }}">
+
+            {% for feature in features %}
+            <label>{{ feature }}:</label>
+            <input type="number" name="{{ feature }}" required>
+            {% endfor %}
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>

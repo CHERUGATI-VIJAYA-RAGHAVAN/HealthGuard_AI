@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HealthGuard AI - Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/health_preview.png') }}" alt="HealthGuard AI Logo">
+        <span>HealthGuard AI</span>
+    </div>
+
+    <h1>🔍 Welcome to HealthGuard AI</h1>
+    <p>Enter your details below to predict diseases.</p>
+
+    <div class="form-container">
+        <form action="/predict" method="POST">
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="disease">Select Disease:</label>
+            <select id="disease" name="disease" required>
+                <option value="Diabetes">Diabetes</option>
+                <option value="Heart Disease">Heart Disease</option>
+                <option value="Parkinson's">Parkinson's</option>
+            </select>
+
+            <button type="submit">Proceed</button>
+        </form>
+    </div>
+<!-- Navigation Menu -->
+<nav>
+    <ul>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Contact Section -->
+<section>
+    <p>
+        Have any questions? Feel free to reach out to us:
+    </p>
+    <ul>
+        <li>Email: <a href="mailto:vijayraghava1234@gmail.com">vijayraghava1234@gmail.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/7306952311" target="_blank">7306952311</a></li>
+        
+    </ul>
+
+</section>
+
+
+</body>
+</html>
