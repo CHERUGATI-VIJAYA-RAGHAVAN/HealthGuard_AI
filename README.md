@@ -82,38 +82,44 @@ HealthGuard AI will now be accessible at:
 
 ## 🖼️ Screenshots & Explanations
 
-### **🏠 1️⃣ Main Page - Disease Selection**
-![Main Page](main_page.png)  
+### **🏠 1️⃣ Main Page - Disease Selection**[[
+![Main Page](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/main_page.png?raw=true)
+
 📌 **Explanation:** This is the homepage where users enter their name and select the disease they want to check (Diabetes, Heart Disease, or Parkinson's).  
 
 ---
 
 ### **🌗 2️⃣ Dark/Light Mode Feature**
-![Dark Mode](dark_light_mode.png)  
+![Dark Mode](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/dark_light_mode.png?raw=true)
+
 📌 **Explanation:** The application supports both **Dark Mode and Light Mode**, allowing users to switch between themes for better readability.
 
 ---
 
 ### **📊 3️⃣ Diabetes Prediction Input Page**
-![Diabetes Prediction](diabetes.png)  
+![Diabetes Prediction](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/diabetes.png?raw=true)
+
 📌 **Explanation:** Users enter their medical details, such as **glucose levels, blood pressure, and BMI**, to check for diabetes risk.  
 
 ---
 
 ### **🫀 4️⃣ Heart Disease Prediction Input Page**
-![Heart Disease Prediction](heart.png)  
+![Heart Disease Prediction](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/heart.png?raw=true)
+
 📌 **Explanation:** Users provide **cholesterol levels, blood pressure, and other heart-related details** to assess their heart disease risk.  
 
 ---
 
 ### **🧠 5️⃣ Parkinson’s Disease Prediction Input Page**
-![Parkinson's Prediction](parkisons.png)  
+![Parkinson's Prediction](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/parkisons.png?raw=true)
+
 📌 **Explanation:** The AI model evaluates **voice parameters, jitter, and HNR (Harmonic-to-Noise Ratio)** to determine the **risk of Parkinson’s Disease**.
 
 ---
 
 ### **✅ 6️⃣ Prediction Result Page**
-![Prediction Result](result.png)  
+![Prediction Result](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/result.png?raw=true)
+
 📌 **Explanation:** After submitting medical parameters, users receive a **disease prediction result**. If the result is **positive**, health tips are displayed.  
 
 ---
