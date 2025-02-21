@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/health_preview.png') }}" alt="HealthGuard AI Logo">
+        <span>HealthGuard AI</span>
+    </div>
+
+    <h1>🔍 Diabetes Prediction</h1>
+    <p><strong>Patient Name:</strong> {{ name }}</p>
+
+    <div class="form-container">
+        <form method="POST" action="/predict_diabetes">
+            <input type="hidden" name="name" value="{{ name }}">
+
+            <label>Pregnancies:</label>
+            <input type="number" name="pregnancies" required>
+
+            <label>Glucose Level:</label>
+            <input type="number" name="glucose" required>
+
+            <label>Blood Pressure:</label>
+            <input type="number" name="bloodpressure" required>
+
+            <label>Skin Thickness:</label>
+            <input type="number" name="skinthickness" required>
+
+            <label>Insulin Level:</label>
+            <input type="number" name="insulin" required>
+
+            <label>BMI:</label>
+            <input type="number" name="bmi" required>
+
+            <label>Diabetes Pedigree Function:</label>
+            <input type="number" name="pedigree" required>
+
+            <label>Age:</label>
+            <input type="number" name="age" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

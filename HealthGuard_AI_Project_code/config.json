@@ -1,0 +1,7 @@
+{
+    "disease_labels": {
+        "diabetes": ["Not Diabetic", "Diabetic"],
+        "heart": ["Healthy Heart", "At Risk of Heart Disease"],
+        "parkinsons": ["No Parkinson’s", "Parkinson’s Detected"]
+    }
+}

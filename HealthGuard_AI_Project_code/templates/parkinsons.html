@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parkinson's Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/health_preview.png') }}" alt="HealthGuard AI Logo">
+        <span>HealthGuard AI</span>
+    </div>
+
+    <h1>🧠 Parkinson's Disease Prediction</h1>
+    <p><strong>Patient Name:</strong> {{ name }}</p>
+
+    <div class="form-container">
+        <form method="POST" action="/predict_parkinsons">
+            <input type="hidden" name="name" value="{{ name }}">
+
+            <label>MDVP:Fo(Hz):</label>
+            <input type="number" name="fo" required>
+
+            <label>MDVP:Fhi(Hz):</label>
+            <input type="number" name="fhi" required>
+
+            <label>MDVP:Flo(Hz):</label>
+            <input type="number" name="flo" required>
+
+            <label>MDVP:Jitter(%):</label>
+            <input type="number" name="jitter" required>
+
+            <label>MDVP:Shimmer:</label>
+            <input type="number" name="shimmer" required>
+
+            <label>HNR (Harmonics-to-Noise Ratio):</label>
+            <input type="number" name="hnr" required>
+
+            <label>RPDE (Recurrence Period Density Entropy):</label>
+            <input type="number" name="rpde" required>
+
+            <label>DFA (Detrended Fluctuation Analysis):</label>
+            <input type="number" name="dfa" required>
+
+            <label>Spread1:</label>
+            <input type="number" name="spread1" required>
+
+            <label>Spread2:</label>
+            <input type="number" name="spread2" required>
+
+            <label>D2:</label>
+            <input type="number" name="d2" required>
+
+            <label>PPE (Pitch Period Entropy):</label>
+            <input type="number" name="ppe" required>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>
