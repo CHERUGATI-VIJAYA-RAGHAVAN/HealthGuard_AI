@@ -1,7 +1,8 @@
 # 🛡️ HealthGuard AI - AI-Powered Disease Prediction 🏥
 
 ## 🔍 About HealthGuard AI
-     (https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/health_preview_resized_75.png?raw=true)
+![Logo](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/raw/main/images/health_preview_resized_75.png)
+
 
 HealthGuard AI is a web-based AI-powered disease prediction system that helps users assess their risk for:  
 ✔ **Diabetes**  
