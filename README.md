@@ -1,6 +1,8 @@
 # 🛡️ HealthGuard AI - AI-Powered Disease Prediction 🏥
 
 ## 🔍 About HealthGuard AI
+     ![Logo](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/health_preview_resized_75.png?raw=true)
+
 HealthGuard AI is a web-based AI-powered disease prediction system that helps users assess their risk for:  
 ✔ **Diabetes**  
 ✔ **Heart Disease**  
@@ -83,7 +85,8 @@ HealthGuard AI will now be accessible at:
 ## 🖼️ Screenshots & Explanations
 
 ### **🏠 1️⃣ Main Page - Disease Selection**[[
-![Main Page](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/main_page.png?raw=true)
+![Main Page](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/main%20page.png?raw=true)
+
 
 📌 **Explanation:** This is the homepage where users enter their name and select the disease they want to check (Diabetes, Heart Disease, or Parkinson's).  
 
@@ -97,7 +100,8 @@ HealthGuard AI will now be accessible at:
 ---
 
 ### **📊 3️⃣ Diabetes Prediction Input Page**
-![Diabetes Prediction](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/diabetes.png?raw=true)
+![Diabetes](https://github.com/CHERUGATI-VIJAYA-RAGHAVAN/HealthGuard_AI/blob/main/images/diabetes%20.png?raw=true)
+
 
 📌 **Explanation:** Users enter their medical details, such as **glucose levels, blood pressure, and BMI**, to check for diabetes risk.  
 
